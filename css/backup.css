@@ -1,0 +1,103 @@
+/* 🐈 */
+
+h1, h2{
+    color: mediumpurple;
+}
+
+h3{
+    color: magenta;
+}
+
+@media screen and (max-width: 991.98px){
+    h2{
+        visibility: hidden;
+    }
+
+    h3{
+        color: mediumblue;
+    }
+}
+
+@media print {
+    h1, h3{
+        color: red;
+    }
+
+    h2{
+        display: none;
+    }
+}
+
+.columna-fila div{
+    border: 2px solid midnightblue;
+    margin-bottom: 5px;
+}
+
+@media (orientation: landscape){
+    .columna-fila{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait){
+    .columna-fila{
+        display: flex;
+        flex-direction: column;
+    }
+    .columna-fila div{
+        background-color: navy;
+    }
+    .columna-fila div p{
+        color: antiquewhite;
+        font-size: 14px;
+    }
+}
+
+@media (min-resolution: 72dpi){
+    .pixelada{
+        display: none;
+    }
+}
+
+@media (max-resolution: 71dpi){
+    .normal{
+        display: none;
+    }
+}
+
+.p-modificado{
+    color: mediumseagreen;
+}
+
+.p-modificado::first-line{
+    color: black;
+}
+
+.p-modificado::selection{
+    color: antiquewhite;
+    background-color: mediumpurple;
+}
+
+.p-modificado:hover::after{
+    content: "🐈";
+}
+
+a{
+    color: magenta;
+    text-decoration: none;
+}
+
+a:hover{
+    color: antiquewhite;
+    background-color: magenta;
+}
+
+a:active{
+    color: magenta;
+    background-color: black;
+}
+
+a:visited{
+    color: blueviolet;
+}

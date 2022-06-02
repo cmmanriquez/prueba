@@ -1,0 +1,19 @@
+footer {
+  background-color: black;
+}
+footer nav ul li {
+  list-style: none;
+}
+footer nav ul li a {
+  background-color: aqua;
+}
+footer nav ul li a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 300px) {
+  footer {
+    background-color: green;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+@import '../scss/base/maps';
+
+footer{
+    background-color: map-get($header , bg-header);
+    nav{
+        ul{
+            li{
+            list-style: map-get($header, decoration);
+                a{
+                    background-color: aqua;
+                    &:hover{
+                        text-decoration: underline
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 300px){
+        background-color: green;
+    }
+}
